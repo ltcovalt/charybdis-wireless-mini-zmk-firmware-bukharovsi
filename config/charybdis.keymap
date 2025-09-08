@@ -308,10 +308,10 @@
         BASE {
             label = "Base";
             bindings = <
-&lt SYS ESC  &kp Q             &kp W                &kp F             &kp P                        &kp B      &kp J        &kp L                  &kp U                        &kp Y                       &kp SQT            &kp BACKSPACE
-&kp TAB      &hm_left LCTRL A  &hm_left LEFT_ALT R  &hm_left LSHFT S  &hm_left LEFT_COMMAND T      &kp G      &kp M        &hm_right RIGHT_GUI N  &hm_right RSHFT E            &hm_right RIGHT_ALT I       &hm_right RCTRL O  &all_quotes
-&to NAV      &kp Z             &kp X                &kp C             &kp D                        &kp V      &kp K        &kp H                  &hm_right_layer SNIPE COMMA  &hm_right_layer SCROLL DOT  &kp SLASH          &to 1
-                                                    &sk LEFT_COMMAND  &space_or_super SPACE SPACE  &mo DIG    &lt SYS ESC  &kp RET
+&lt SYS ESC  &kp Q             &kp W                &kp F             &kp P                    &kp B      &kp J        &kp L                  &kp U                        &kp Y                       &kp SQT            &kp BACKSPACE
+&kp TAB      &hm_left LCTRL A  &hm_left LEFT_ALT R  &hm_left LSHFT S  &hm_left LEFT_COMMAND T  &kp G      &kp M        &hm_right RIGHT_GUI N  &hm_right RSHFT E            &hm_right RIGHT_ALT I       &hm_right RCTRL O  &all_quotes
+&to NAV      &kp Z             &kp X                &kp C             &kp D                    &kp V      &kp K        &kp H                  &hm_right_layer SNIPE COMMA  &hm_right_layer SCROLL DOT  &kp SLASH          &kp ENTER
+                                                    &kp LEFT_SHIFT    &lt 2 BACKSPACE          &mo DIG    &lt SYS ESC  &lt 2 SPACE
             >;
         };
 
@@ -325,7 +325,7 @@
             >;
         };
 
-        Navigation {
+        NAV {
             label = "Navigation";
             bindings = <
 &kp ESC    &kp TAB    &kp BSPC  &kp UP_ARROW  &kp DEL                      &kp LBKT                &kp RBKT               &kp GRAVE       &kp PLUS       &kp PIPE          &kp COLON     &kp PIPE
@@ -335,23 +335,23 @@
             >;
         };
 
-        digits {
-            label = "Digits";
+        NUM {
+            label = "numbers";
             bindings = <
-&trans  &kp TILDE                   &kp DOLLAR                 &kp LEFT_BRACE                   &kp RIGHT_BRACE                          &more_or_equal      &kp PLUS         &kp N7  &kp N8  &kp N9  &kp SEMICOLON    &trans
-&trans  &hm_left LCTRL EXCLAMATION  &hm_left LEFT_ALT AT_SIGN  &hm_left LSHFT LEFT_PARENTHESIS  &hm_left LEFT_COMMAND RIGHT_PARENTHESIS  &fun_arrow_right    &kp EQUAL        &kp N4  &kp N5  &kp N6  &kp KP_MULTIPLY  &trans
-&trans  &kp PIPE                    &kp AMPERSAND              &mt LESS_THAN LEFT_BRACKET       &mt GREATER_THAN RIGHT_BRACKET           &less_or_equal      &mt UNDER MINUS  &kp N1  &kp N2  &kp N3  &kp PERIOD       &to BASE
-                                                               &trans                           &trans                                   &trans              &trans           &kp N0
+&trans   &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans
+&trans   &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &trans
+&kp F12  &kp F1           &kp F2       &kp F3    &kp F4      &kp F5         &kp F6     &kp F7         &kp F8        &kp F9                &kp F10                &kp F11
+                                       &trans    &trans      &trans         &trans     &kp N0
             >;
         };
 
-        system {
-            label = "SYSTEM";
+        SYS {
+            label = "System";
             bindings = <
-&trans      &kp F1  &kp F2  &kp F3        &kp F4        &kp F5          &kp F6        &kp F7        &kp F8      &kp F9      &kp F10  &trans
-&trans      &trans  &trans  &trans        &out OUT_USB  &out OUT_BLE    &kp C_MUTE    &kp C_PP      &trans      &trans      &trans   &trans
-&bt BT_CLR  &trans  &trans  &out OUT_TOG  &bt BT_PRV    &bt BT_NXT      &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PREV  &kp C_NEXT  &trans   &studio_unlock
-                            &trans        &trans        &trans          &trans        &trans
+&trans  &trans  &kp C_VOLUME_DOWN  &kp C_MUTE    &kp C_VOLUME_UP  &kp C_BRI_UP    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+&trans  &trans  &kp C_PREV         &kp C_PP      &kp C_NEXT       &kp C_BRI_DN    &trans        &trans        &trans        &trans        &trans        &trans
+&trans  &trans  &trans             &out OUT_TOG  &trans           &trans          &trans        &trans        &trans        &trans        &trans        &studio_unlock
+                                   &trans        &trans           &trans          &trans        &trans
             >;
         };
 

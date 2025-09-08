@@ -328,10 +328,10 @@
         Navigation {
             label = "Navigation";
             bindings = <
-&trans  &trans  &trans  &trans  &trans                       &trans    &none         &kp HOME      &kp UP    &kp END        &kt PAGE_UP    &trans
-&trans  &trans  &trans  &trans  &trans                       &trans    &kp LA(LEFT)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp LA(RIGHT)  &trans
-&trans  &trans  &trans  &trans  &trans                       &trans    &none         &kp LA(LEFT)  &none     &kp LA(RIGHT)  &kt PAGE_DOWN  &to BASE
-                        &trans  &space_or_super SPACE SPACE  &trans    &trans        &trans
+&kp ESC    &kp TAB    &kp BSPC  &kp UP_ARROW  &kp DEL                      &kp LBKT                &kp RBKT               &kp GRAVE       &kp PLUS       &kp PIPE          &kp COLON     &kp PIPE
+&kp TAB    &kp LSHFT  &kp LEFT  &kp DOWN      &kp RIGHT                    &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp MINUS       &kp EQUAL      &kp BSLH          &kp SEMI      &kp DOUBLE_QUOTES
+&kp LCTRL  &kp LGUI   &kp X     &kp HOME      &kp END                      &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp UNDERSCORE  &kp LESS_THAN  &kp GREATER_THAN  &kp QUESTION  &kp RET
+                                &trans        &space_or_super SPACE SPACE  &trans                  &trans                 &trans
             >;
         };
 

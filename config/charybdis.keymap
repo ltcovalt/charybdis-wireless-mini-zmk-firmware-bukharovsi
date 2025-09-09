@@ -287,9 +287,9 @@
         BASE {
             label = "Base";
             bindings = <
-&lt 5 ESC         &kp Q             &kp W                &kp F             &kp P                    &kp B          &kp J        &kp L                  &kp U                    &kp Y                  &kp SQT            &lt 5 BACKSLASH
-&lt 4 TAB         &hm_left LCTRL A  &hm_left LEFT_ALT R  &hm_left LSHFT S  &hm_left LEFT_COMMAND T  &kp G          &kp M        &hm_right RIGHT_GUI N  &hm_right RSHFT E        &hm_right RIGHT_ALT I  &hm_right RCTRL O  &all_quotes
-&kp LEFT_CONTROL  &kp Z             &kp X                &kp C             &kp D                    &kp V          &kp K        &kp H                  &hm_right_layer 8 COMMA  &hm_right_layer 7 DOT  &kp SLASH          &kp ENTER
+&lt 7 ESC         &kp Q             &kp W                &kp F             &kp P                    &kp B          &kp J        &kp L                  &kp U              &kp Y                  &kp SQT            &lt 7 BACKSLASH
+&lt 4 TAB         &hm_left LCTRL A  &hm_left LEFT_ALT R  &hm_left LSHFT S  &hm_left LEFT_COMMAND T  &kp G          &kp M        &hm_right RIGHT_GUI N  &hm_right RSHFT E  &hm_right RIGHT_ALT I  &hm_right RCTRL O  &all_quotes
+&kp LEFT_CONTROL  &kp Z             &kp X                &kp C             &kp D                    &kp V          &kp K        &kp H                  &kp COMMA          &kp PERIOD             &kp SLASH          &kp ENTER
                                                          &kp LEFT_SHIFT    &lt 2 BACKSPACE          &lt 3 ENTER    &lt 3 ENTER  &lt 2 SPACE
             >;
         };
@@ -334,6 +334,16 @@
             >;
         };
 
+        AUTO-MOUSE {
+            label = "Mouse";
+            bindings = <
+&trans  &trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 8   &mkp MCLK  &mkp RCLK  &mkp LCLK  &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                           &mkp MCLK  &mkp LCLK  &mkp RCLK    &trans  &trans
+            >;
+        };
+
         CFG {
             bindings = <
 &trans       &to 0   &to 1   &trans  &trans  &studio_unlock    &studio_unlock  &trans  &trans  &trans  &trans  &trans
@@ -343,16 +353,6 @@
             >;
 
             label = "Config";
-        };
-
-        AUTO-MOUSE {
-            label = "Mouse";
-            bindings = <
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
-            >;
         };
 
         SCROLL {

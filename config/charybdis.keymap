@@ -336,10 +336,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &mo 7   &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &mo 7   &trans  &trans  &mkp LCLK  &trans    &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &mo 7   &trans
+                        &trans  &trans     &trans    &trans  &trans
             >;
 
             label = "Mouse";
@@ -358,10 +358,10 @@
         SNIPE {
             label = "Snipe";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &mkp LCLK  &trans    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
+                        &trans  &trans     &trans    &trans  &trans
             >;
         };
 

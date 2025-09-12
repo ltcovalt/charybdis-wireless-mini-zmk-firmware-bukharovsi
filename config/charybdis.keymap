@@ -297,10 +297,10 @@
         GAME {
             label = "Game";
             bindings = <
-&lt 6 ESC  &kp I           &kp Q  &kp W             &kp E      &kp R    &trans     &trans   &trans  &trans  &trans  &trans
-&lt 4 TAB  &kp LEFT_SHIFT  &kp A  &kp S             &kp D      &kp F    &trans     &trans   &trans  &trans  &trans  &trans
-&kp LCTRL  &kp Z           &kp X  &kp C             &kp M      &kp V    &trans     &trans   &trans  &trans  &trans  &trans
-                                  &sk LEFT_COMMAND  &kp SPACE  &mo 3    &lt 4 ESC  &kp RET
+&lt 8 ESC  &kp I           &kp Q  &kp W  &kp E      &kp R          &trans  &trans  &trans  &trans  &trans  &trans
+&lt 4 TAB  &kp LEFT_SHIFT  &kp A  &kp S  &kp D      &kp F          &trans  &trans  &trans  &trans  &trans  &trans
+&kp LCTRL  &kp Z           &kp X  &kp C  &kp M      &kp V          &trans  &trans  &trans  &trans  &trans  &trans
+                                  &mo 2  &kp SPACE  &lt 3 ENTER    &trans  &trans
             >;
         };
 

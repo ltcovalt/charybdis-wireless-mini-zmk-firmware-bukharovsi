@@ -48,7 +48,7 @@
 
 / {
 	&vtrackball {
- 	 cpi = <1600>;
+ 	 res-cpi = <1200>;
 	}
 
     behaviors {

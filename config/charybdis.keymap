@@ -47,6 +47,10 @@
 };
 
 / {
+	&vtrackball {
+ 	 cpi = <1600>;
+	}
+
     behaviors {
         hm_right: homerow_mod_right {
             compatible = "zmk,behavior-hold-tap";

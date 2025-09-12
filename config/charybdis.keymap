@@ -266,7 +266,7 @@
 
             input-processors =
                 <&zip_xy_to_scroll_mapper>,
-					 <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>,
+                <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>,
                 <&zip_scroll_scaler 1 96>;
         };
     };
@@ -335,9 +335,9 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &mkp MB4   &mkp MB3  &mkp MB5   &trans  &trans
-&trans  &mo 7   &trans  &trans  &mkp LCLK  &trans    &trans  &mkp LCLK  &mo 6     &mkp RCLK  &mo 7   &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans  &trans     &trans  &trans
+&trans  &mo 7   &trans  &trans  &mkp LCLK  &trans    &trans  &mkp LCLK  &mo 6   &mkp RCLK  &mo 7   &trans
                         &trans  &trans     &trans    &trans  &trans
             >;
 
@@ -357,9 +357,9 @@
         SNIPE {
             label = "Snipe";
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &mkp LCLK  &trans    &trans  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans  &mkp MB4   &mkp MCLK  &mkp MB5   &trans  &trans
+&trans  &trans  &trans  &trans  &mkp LCLK  &trans    &trans  &mkp LCLK  &mo 6      &mkp RCLK  &trans  &trans
                         &trans  &trans     &trans    &trans  &trans
             >;
         };

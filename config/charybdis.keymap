@@ -335,10 +335,10 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans    &trans  &trans     &trans     &trans     &trans  &trans
-&trans  &mo 7   &trans  &trans  &mkp LCLK  &trans    &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &mo 7   &trans
-                        &trans  &trans     &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans     &trans    &trans    &trans     &trans     &trans     &trans  &trans
+&trans  &mo 7   &trans  &trans  &mkp LCLK  &trans    &mkp MB4  &mkp LCLK  &mkp RCLK  &mkp MCLK  &mo 7   &mkp MB5
+                        &trans  &trans     &trans    &trans    &trans
             >;
 
             label = "Mouse";
